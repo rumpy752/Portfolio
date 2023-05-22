@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Check these tags to make sure they are neccessary -->
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <a href="index2.html">
+                <img id="img-header" src="jaime.png" height="50" width="50" class="navbar-left" />
+            </a>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index2.html">Jaime Rump </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#aboutTitle">About Me</a></li>
+                <li><a href="#point">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h3>Let's Connect </h3>
+        <p>Feel free to reach out if you're interested in working together, being friends, or have productive feedback for me!</p>
+        <p>You can also email me at jaimerump@gmail.com. All fields are required!</p>
+    </div>
+
+
+    <form class="form-horizontal" action="https://formsubmit.co/0174cfca173238d1956bc62a8c5026bf" method="POST">
+        <fieldset>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="fname">First Name</label>
+                <div class="col-md-4">
+                    <input id="fname" name="fname" type="text" placeholder="John " class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lname">Last Name</label>
+                <div class="col-md-4">
+                    <input id="lname" name="lname" type="text" placeholder="Doe" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email</label>
+                <div class="col-md-4">
+                    <input id="email" name="email" type="text" placeholder="example@example.com" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="phone">Phone</label>
+                <div class="col-md-4">
+                    <input id="phone" name="phone" type="text" placeholder="123-456-7891" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="country">Country</label>
+                <div class="col-md-4">
+                    <select id="country" name="country" class="form-control">
+                        <option value="1">New Zealand</option>
+                        <option value="2">Canada</option>
+                        <option value="3">USA</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="message">Message</label>
+                <div class="col-md-8">
+                    <textarea class="form-control" id="message" name="message" onclick="clearTextArea()">Write something here..</textarea>
+                </div>
+            </div>
+            <script>
+                function clearTextArea() {
+                    document.getElementById("message").value = "";
+                }
+            </script>
+
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="submit"></label>
+                <div class="col-md-4">
+                    <button id="btn" name="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+
+
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <p> Designed & Built by Jaime Rump</p>
+        <p> © 2023</p>
+    </footer>
+
+
+
+</body>
+</html>

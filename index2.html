@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Check these tags to make sure they are neccessary -->
+    <title>Jaime Rump</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <img id="img-header" src="jaime.png" height="50" width="50"  class="navbar-left"/>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Jaime Rump </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#aboutTitle">About Me</a></li>
+                <li><a href="#point">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="row_intro">
+        <p id="resume_title"> Hey, I'm Jaime . </p>
+        <p id="resume_p">I'm a frontend web developer who loves bringing websites and web apps to life with impactful, user-friendly designs. I'm also comfortable with back-end development and programming, which gives me a deeper understanding of how everything works together.  </p>
+        <a id="resume_a" href="https://github.com/rumpy752?tab=repositories">&#8594; View Github Repository</a>
+        <a id="resume_a" href="https://www.example.com">&#8594; Download Resume</a>
+    </div>
+
+    <script>
+        const title = document.querySelector("#resume_title");
+        const text = title.textContent;
+        const length = text.length;
+        const heyIndex = text.indexOf("Hey,") + 4; // Get the index of the end of "Hey,"
+        const heyText = text.slice(0, heyIndex); // Get the "Hey," part of the text
+        const restText = text.slice(heyIndex); // Get the rest of the text
+        title.textContent = "";
+
+          for (let i = 0; i < heyText.length; i++) {
+          // Add a longer delay for the first part of the text
+          const delay = i === 0 ? 1000 : 200;
+            setTimeout(() => {
+            title.textContent += heyText.charAt(i);
+            }, delay * i);
+          }
+
+          // Add the rest of the text with the normal delay
+          for (let i = 0; i < restText.length; i++) {
+            setTimeout(() => {
+            title.textContent += restText.charAt(i);
+            }, 200 * (i + heyText.length));
+          }
+    </script>
+
+    <div class="row">
+        <div id="aboutTitle" class="col-12">
+            <h2>About Me</h2>
+        </div>
+        <div id="getToKnow" class="col-sm-6">
+            <h2 id="h2_getToKnow"> Get To Know Me </h2>
+            <p id="getToKnow_p">I'm am a <strong>Developer</strong> with <strong>Front-end</strong> and <strong>Back-end</strong> experience. I enjoy <strong>building the Front-end of Websites and Web Applications</strong> that leads to the success of the overall product. I also enjoy using languages like Python and Java to <strong>build the underlying systems</strong> that manage data, process requests, and perform other tasks necessary for a website or application to function properly. Check out some of my work in the <strong>Projects</strong> section below.</p>
+            <p id="getToKnow_p">Feel free to Connect or Follow me on my <strong><a href="https://www.linkedin.com/in/jaime-rump-97047124a/">LinkedIn</a></strong> where I post useful content related to Web Development and Programming</p>
+            <p id="getToKnow_p">I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact me</strong>.</p>
+            
+        </div>
+
+        <div id="skillsIcons" class="col-sm-6">
+            <h2 id="h2_skillsIcons"> My Skills </h2>
+            <div id="iconList">
+                <div class="row_icons">
+                    <div class="column"><img src="python.png" width="50" height="50" /><span class="tooltiptext">Python</span></div>
+                    <div class="column"><img src="java.png" width="50" height="50" /> <span class="tooltiptext">Java</span></div>
+                    <div class="column"><img src="c-sharp.png" width="50" height="50" /><span class="tooltiptext">C#</span></div>
+                </div>
+                <div class="row_icons">
+                    <div class="column"><img src="c-.png" width="50" height="50" /><span class="tooltiptext">C++</span></div>
+                    <div class="column"><img src="html.png" width="50" height="50" /><span class="tooltiptext">HTML 5</span></div>
+                    <div class="column"><img src="js.png" width="50" height="50" /><span class="tooltiptext">JavaScript</span></div>
+                </div>
+                <div class="row_icons">
+                    <div class="column"><img src="css-3.png" width="50" height="50" /><span class="tooltiptext">CSS3</span></div>
+                    <div class="column"><img src="bootstrap.png" width="50" height="50" /><span class="tooltiptext">Bootstrap</span></div>
+                    <div class="column"><img src="physics.png" width="50" height="50" /><span class="tooltiptext">React</span></div>
+                </div>
+                <div class="row_icons">
+                    <div class="column"><img src="shopify.png" width="50" height="50" /><span class="tooltiptext">Shopify </span></div>
+                    <div class="column"><img src="wp.png" width="60" height="60" /><span class="tooltiptext">Wordpress</span></div>
+                    <div class="column"><img src="My project.png" width="50" height="50" /><span class="tooltiptext">Squarespace</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-projects">
+
+        <div id="aboutTitle" class="col-12">
+            <h2 id="point">My Projects </h2>
+            <button id="btn">See All My Work</button>
+        </div>
+            <script>
+                const button = document.getElementById("btn");
+                button.addEventListener("click", () => {
+                    window.location.href = "portfolio.html";
+                });
+            </script>
+        
+        <ul>
+            <li>
+                <div class="title-container">
+                    <h2 id="ptitle"> MSP Client Website </h2>
+                    <span class="title-text"> <span class="dot" style="background-color: #00ff21; "></span> wordpress <span class="dot" style="background-color: #e34c26; "></span> html  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                    <span class="arrow" onclick="toggleDropdown('dropdown1', this)">▼</span>
+                </div>
+                <div id="dropdown1" class="dropdown-content">
+                    <div class="row-contents">
+                        <div class="column-dropdown1">
+                            This website I developed was through Wordpress and additional html functionality, for a client who offers Managed Service Provider services to businessess.  
+                            <div class="icons-container">
+                                <img id="github-icon" src="github-logo.png" height="40" width="40" />
+                                <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
+                            </div>
+                        </div>
+                        <div class="column-dropdown2"><img id="img-dropdown" src="screenshot_2.png" height="250" width="400" onclick="myfunction2()" /></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="title-container">
+                    <h2 id="ptitle">Consultant Client Website</h2>
+                    <span class="title-text"> <span class="dot" style="background-color: #e34c26;"></span> html <span class="dot" style="background-color: #f1e05a;"></span> javascript <span class="dot" style="background-color: #ec2ffa"></span> css</span>
+                    <span class="arrow" onclick="toggleDropdown('dropdown2', this)">▼</span>
+                </div>
+
+                <div id="dropdown2" class="dropdown-content">
+                    <div class="row-contents">
+                        <div class="column-dropdown1">
+                            My Consultant Website Design and Development Project involved the creation of a fully functional website from scratch for my client Jenny, a consultant in the field of Diversity and Inclusivity. Using HTML, CSS, and JavaScript, I designed a sleek and professional website completely from scratch that met the expectations of my client.
+                            <div class="icons-container">
+                                <img id="github-icon" src="github-logo.png" height="40" width="40" />
+                                <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
+                            </div>
+                        </div>
+                        <div class="column-dropdown2"><img id="img-dropdown" src="screenshot_1.png" height="250" width="400" onclick="myfunction()" /></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="title-container">
+                    <h2 id="ptitle">Android Security App</h2>
+                    <span class="title-text"> <span class="dot" style="background-color: #0094ff;"></span> XML <span class="dot" style="background-color: #ff6a00;"></span> java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="arrow" onclick="toggleDropdown('dropdown3', this)">▼</span>
+                </div>
+
+                <div id="dropdown3" class="dropdown-content">
+                    <div class="row-contents">
+                        <div class="column-dropdown1">
+                            I developed this security token app for a school project, using Android Studios and Java, XML. This app is a prototype that I intend to complete one day. It provides the user a unique passcode every minute, and records and displays the timestamps generated to the user. Demonstrates my ability to develop and execute android applications.
+                            <div class="icons-container">
+                                <img id="github-icon" src="github-logo.png" height="40" width="40" />
+                                
+                            </div>
+                        </div>
+                        <div class="column-dropdown2"><img id="img-dropdown" src="screenshot_1.png" height="250" width="400" onclick="myfunction()" /></div>
+                    </div>
+                </div>
+
+
+                
+            </li>
+        </ul>
+    </div>
+
+        <script>
+            function myfunction () {
+                alert("add url!");
+
+            }
+
+            function myfunction2() {
+                
+                var url = "https://itworksmsp.com/";
+                window.open(url, "_blank");
+            }
+
+            function toggleDropdown(id, arrow) {
+             var dropdown = document.getElementById(id);
+             if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+                arrow.innerHTML = "&#9650;";
+                } else {
+                    dropdown.style.display = "none";
+                    arrow.innerHTML = "&#9660;";
+                }
+            }
+        </script>
+
+
+    </div>
+
+    <div id="contact">
+        <h2>Get In Touch </h2>
+
+        <p> My inbox is always open, please get in touch with any job opportunities, questions, or feedback for me! Thanks. </p>
+
+        <button id="btn" onclick="window.location.href='contact.html'">Say Hello</button>
+    </div>
+
+    <footer>
+        <p> Designed & Built by Jaime Rump</p>
+        <p> © 2023</p>
+    </footer>
+</body>
+</html>

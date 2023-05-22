@@ -1,0 +1,475 @@
+body {
+    background-color: #221E22;
+    overflow-x: hidden;
+    user-select: none;
+ 
+    
+}
+
+/* Style of index.html (intro) */
+#text-container {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 100px;
+    font-family: 'Courier New', monospace;
+}
+
+#text-container span {
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+}
+
+#char1 {
+    transition-delay: 0.4s;
+}
+
+#char2 {
+    transition-delay: 0.8s;
+}
+
+#char3 {
+    transition-delay: 0.12s;
+}
+
+/* Style for index2.html */
+nav {
+   
+    
+    font-family: 'Courier New', monospace;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 18px !important;
+}
+
+.navbar {
+    position: relative;
+    
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+.navbar-nav > li > a {
+    font-size: 18px;
+   
+}
+
+.nav a:hover {
+    color: orange !important;
+}
+
+#img-header {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 45px;
+   
+}
+
+#point {
+    margin-bottom: 20px;
+
+
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ECA72C;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+    #myBtn:hover {
+        background-color: #FAC66C;
+    }
+
+.row_intro {
+    min-height: 600px;
+    height: auto; /* adjust this value to your desired height */
+    background-color: #221E22;
+    width: 100%;
+    padding: 100px;
+    margin: 0; /* don't change this !! */
+}
+
+#resume_a:hover {
+    color: #41B38F !important;
+       
+}
+
+#resume_title {
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    word-spacing: 0.5px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    width: 70%;
+    margin: 50px auto;
+    line-height: 35px;
+}
+
+#resume_p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    word-spacing: 0.2px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    line-height: 35px;
+}
+
+#resume_a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    word-spacing: 0.2px;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    width: 100%;
+    line-height: 15px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin: 50px auto;
+    text-decoration-color: #FAC66C;
+}
+
+.row {
+    min-height: 900px;
+    height: auto; /* adjust this value to your desired height */
+    background-color: #221E22;
+    margin-bottom: 0 !important;
+}
+
+#aboutTitle {
+    padding: 15px !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: auto;
+    user-select: none;
+    
+}
+
+h2 {
+    font-family: 'Courier New', monospace !important;
+    font-size: 40px !important;
+    word-spacing: 0.5px;
+    color: white !important;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    line-height: 35px;
+    text-transform: uppercase;
+    
+    user-select: none;
+}
+
+
+#getToKnow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+#getToKnow_p {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    word-spacing: 0.2px;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    text-align: left;
+    width: 80%;
+    margin: 5px auto;
+    line-height: 35px;
+}
+
+    #getToKnow_p a {
+        color: orange;
+
+    }
+
+    #h2_skillsIcons, #h2_getToKnow {
+        font-size: 26px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #3B413C;
+    }
+
+#skillsIcons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#iconList {
+    margin-top: 15px;
+}
+
+.row_icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 20px;
+    background-color: none;
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+}
+
+.column .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: white;
+    color: #41B38F;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.column:hover .tooltiptext {
+    visibility: visible;
+}
+
+.row-projects {
+    min-height: 900px;
+    height: auto; /* adjust this value to your desired height */
+    background-color: #221E22;
+    text-align: center;
+    margin-bottom: 0 !important;
+    
+}
+
+#ptitle {
+   text-align: left;
+    display: inline-block;
+}
+
+/* Hide the content of the dropdown initially */
+.dropdown-content {
+    display: none;
+    margin: 50px auto;
+}
+
+.row-contents {
+    font-size: 0; /* This removes any extra space between the columns */
+    display: flex; /* Set the display property to flex */
+}
+
+
+
+
+#img-dropdown {
+    padding: 10px;
+    margin-left: 40px;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* adds a transition effect */
+    box-shadow: 15px 15px 10px #FAC66C; /* adds a box-shadow to create a 3D effect */
+}
+
+    #img-dropdown:hover {
+        transform: scale(1.1); /* scales up the image on hover */
+        box-shadow: 20px 20px 10px #FAC66C; /* adds a box-shadow to create a 3D effect */
+    }
+
+.column-dropdown1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+    .icons-container img {
+        margin: 5px;
+    }
+
+.arrow {
+    font-size: 28px;
+    vertical-align: middle;
+    margin: auto 30px;
+    color: white;
+}
+
+
+.row-projects ul {
+    list-style: none;
+    line-height: 6;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    word-spacing: 0.2px;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+li h2 {
+    user-select: none;
+   
+    padding: 0 !important;
+    text-decoration: none;
+    
+    margin: 0 !important;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid;
+}
+
+.title-text {
+    margin: auto 50px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+
+.dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#contact {
+    text-align: center;
+    padding: 200px;
+    margin-bottom: 10px;
+    color: white;
+    user-select: none;
+    background-color: #221E22;
+    height: 700px;
+}
+
+    #contact p {
+
+        margin: 50px auto;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        word-spacing: 0.2px;
+        color: white;
+        font-weight: 500;
+        font-style: normal;
+        font-variant: normal;
+        
+        width: 50%;
+        line-height: 35px;
+    }
+
+#btn {
+   
+    border-radius: 10px;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    background: #221E22;
+    padding: 10px 20px 10px 20px;
+    border: solid #FAC66C 4px;
+    text-decoration: none;
+
+}
+
+    .btn:hover {
+        text-decoration: none;
+    }
+
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #DAF0EE;
+    z-index: 1000;
+    pointer-events: none;
+    transform: translate(-50px, -50px);
+    mix-blend-mode: difference;
+}
+
+footer {
+    left: 0;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: #221E22;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    position: fixed; /* change the position property to fixed */
+    z-index: 2;
+}
+
+

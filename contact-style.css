@@ -1,0 +1,100 @@
+body {
+    user-select: none;
+}
+
+
+nav {
+    font-family: 'Courier New', monospace;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 18px !important;
+}
+
+.navbar {
+    position: relative;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+.navbar-nav > li > a {
+    font-size: 18px;
+}
+
+    .navbar-nav > li > a.active {
+        background-color: red;
+    }
+
+#img-header {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 45px;
+}
+
+p {
+    width: 100%;
+    text-align: center;   
+}
+
+.title {
+    text-align: center;
+   
+    margin: 20px auto;
+    padding: 10px;
+}
+
+form {
+    
+   padding: 10px;
+   margin: 40px auto 100px auto;
+
+}
+
+#btn {
+    border-radius: 10px;
+    font-family: Courier New;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    padding: 10px 20px 10px 20px;
+    border: solid #FAC66C 4px;
+    text-decoration: none;
+  float: right;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+#message {
+    width: 50%;
+    height: 200px;
+}
+
+
+
+input[type="submit"] {
+    padding: 15px;
+    margin: 20px auto;
+    float: right;
+}
+
+footer {
+    left: 0;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: #221E22;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    position: fixed; /* change the position property to fixed */
+    z-index: 2;
+}
