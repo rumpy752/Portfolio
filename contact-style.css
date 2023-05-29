@@ -26,9 +26,9 @@ nav {
     font-size: 18px;
 }
 
-    .navbar-nav > li > a.active {
-        background-color: red;
-    }
+.nav a:hover {
+    color: orange !important;
+}
 
 #img-header {
     height: 60px;
@@ -95,6 +95,6 @@ footer {
     color: white;
     font-family: 'Courier New', monospace;
     text-align: center;
-    position: fixed; /* change the position property to fixed */
+   
     z-index: 2;
 }
