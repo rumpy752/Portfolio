@@ -296,7 +296,7 @@ h2 {
 /* Hide the content of the dropdown initially */
 .dropdown-content {
     display: none;
-    margin: 50px auto;
+     margin: auto auto;
 }
 
 .row-contents {
