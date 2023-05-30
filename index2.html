@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <!-- Check these tags to make sure they are neccessary -->
-    <title>Jaime Rump</title>
+    <title>Portfolio </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 
@@ -15,242 +15,107 @@
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <img id="img-header" src="jaime.png" height="50" width="50" class="navbar-left" />
+            <a href="index2.html">
+                <img id="img-header" src="jaime.png" height="50" width="50" class="navbar-left" />
+            </a>
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Jaime Rump </a>
+                <a class="navbar-brand" href="index2.html">Jaime Rump </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#aboutTitle">About Me</a></li>
+                <li><a href="index2.html#aboutTitle">About Me</a></li>
                 <li><a href="#point">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-    <div class="row_intro">
-        <p id="resume_title"> Hey, I'm Jaime . </p>
-        <p id="resume_p">I'm a frontend web developer who loves bringing websites and web apps to life with impactful, user-friendly designs. I'm also comfortable with back-end development and programming, which gives me a deeper understanding of how everything works together.  </p>
-        <a id="resume_a" href="https://github.com/rumpy752?tab=repositories" target="blank">&#8594; View Github Repository</a>
-
-        <a id="resume_a" onclick="downloadFile()">&#8594; Download Resume</a>
-
-    </div>
-
-    <script>
-
-
-        const title = document.querySelector("#resume_title");
-        const text = title.textContent;
-        const length = text.length;
-        const heyIndex = text.indexOf("Hey,") + 4; // Get the index of the end of "Hey,"
-        const heyText = text.slice(0, heyIndex); // Get the "Hey," part of the text
-        const restText = text.slice(heyIndex); // Get the rest of the text
-        title.textContent = "";
-
-        for (let i = 0; i < heyText.length; i++) {
-            // Add a longer delay for the first part of the text
-            const delay = i === 0 ? 1000 : 200;
-            setTimeout(() => {
-                title.textContent += heyText.charAt(i);
-            }, delay * i);
-        }
-
-        // Add the rest of the text with the normal delay
-        for (let i = 0; i < restText.length; i++) {
-            setTimeout(() => {
-                title.textContent += restText.charAt(i);
-            }, 200 * (i + heyText.length));
-        }
-
-
-    </script>
-
-    <script>
-        function downloadFile() {
-            var link = document.createElement('a');
-            link.href = 'https://github.com/rumpy752/Portfolio/raw/main/JaimeRump_Resume.pdf';
-            link.download = 'JaimeRump_Resume.pdf';
-            link.click();
-        }
-    </script>
-
-    <div class="row">
-        <div id="aboutTitle" class="col-12">
-            <h2>About Me</h2>
+    <h2 id="point">Jaimes Portfolio</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img id="image3" src="password-generator_image.png" alt="logo" width="200" height="130" />
+            <h2> Secure Login Credentials Generator</h2>
+            <p> Python program designed to generate a username and strong password for the user against criteria.   </p>
+            <a href="https://github.com/rumpy752/Secure-Login-Credentials-Generator/blob/main/credentials-generator.py" target="_blank">
+                <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
+            </a>
         </div>
-        <div id="getToKnow" class="col-sm-6">
-            <h2 id="h2_getToKnow"> Get To Know Me </h2>
-            <p id="getToKnow_p">I'm am a <strong>Developer</strong> with <strong>Front-end</strong> and <strong>Back-end</strong> experience. I enjoy <strong>building the Front-end of Websites and Web Applications</strong> that leads to the success of the overall product. I also enjoy using languages like Python and Java to <strong>build the underlying systems</strong> that manage data, process requests, and perform other tasks necessary for a website or application to function properly. Check out some of my work in the <strong>Projects</strong> section below.</p>
-            <p id="getToKnow_p">Feel free to Connect or Follow me on my <strong><a href="https://www.linkedin.com/in/jaime-rump-97047124a/">LinkedIn</a></strong> where I post useful content related to Web Development and Programming</p>
-            <p id="getToKnow_p">I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong><a href="contact.html" style="color: orange; text-decoration: underline;">contact me</a></strong>.</p>
-
-        </div>
-
-        <div id="skillsIcons" class="col-sm-6">
-            <h2 id="h2_skillsIcons"> My Skills </h2>
-            <div id="iconList">
-                <div class="row_icons">
-                    <div class="column"><img src="python.png" width="50" height="50" /><span class="tooltiptext">Python</span></div>
-                    <div class="column"><img src="java.png" width="50" height="50" /> <span class="tooltiptext">Java</span></div>
-                    <div class="column"><img src="c-sharp.png" width="50" height="50" /><span class="tooltiptext">C#</span></div>
-                </div>
-                <div class="row_icons">
-                    <div class="column"><img src="c-.png" width="50" height="50" /><span class="tooltiptext">C++</span></div>
-                    <div class="column"><img src="html.png" width="50" height="50" /><span class="tooltiptext">HTML 5</span></div>
-                    <div class="column"><img src="js.png" width="50" height="50" /><span class="tooltiptext">JavaScript</span></div>
-                </div>
-                <div class="row_icons">
-                    <div class="column"><img src="css-3.png" width="50" height="50" /><span class="tooltiptext">CSS3</span></div>
-                    <div class="column"><img src="bootstrap.png" width="50" height="50" /><span class="tooltiptext">Bootstrap</span></div>
-                    <div class="column"><img src="physics.png" width="50" height="50" /><span class="tooltiptext">React</span></div>
-                </div>
-                <div class="row_icons">
-                    <div class="column"><img src="shopify.png" width="50" height="50" /><span class="tooltiptext">Shopify </span></div>
-                    <div class="column"><img src="wp.png" width="60" height="60" /><span class="tooltiptext">Wordpress</span></div>
-                    <div class="column"><img src="My project.png" width="50" height="50" /><span class="tooltiptext">Squarespace</span></div>
-                </div>
+        <div class="grid-item">
+            <img id="image3" src="screenshot_1.PNG" alt="image 1" width="200" height="130" />
+            <h2> Consultant Client Website</h2>
+            <p> Prototype website developed from scratch for a client, using HTML, Javascript and CSS.    </p>
+            <div class="icons-container">
+                <a href="https://github.com/rumpy752/Consultant-Client-Website/blob/main/index.html" target="blank">
+                    <img id="github-icon" src="github-logo.png" height="40" width="40" />
+                </a>
+                <a href="https://rumpy752.github.io/Consultant-Client-Website/index.html" target="blank">
+                    <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
+                </a>
             </div>
         </div>
-    </div>
-
-    <div class="row-projects">
-
-        <div id="aboutTitle" class="col-12">
-            <h2 id="point">My Projects </h2>
-            <button id="btn">See All My Work</button>
+        <div class="grid-item">
+            <img id="image3" src="customer_image.PNG" alt="image 2" width="200" height="130" />
+            <h2> Customer Information Management</h2>
+            <p> C# program designed for businesses to hold customer information, their mailing preference, and their cumulative earned discounts. </p>
+            <a href="https://github.com/rumpy752/Customer-Records-Management/blob/main/Program.cs" target="_blank">
+                <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
+            </a>
         </div>
-        <script>
-            const button = document.getElementById("btn");
-            button.addEventListener("click", () => {
-                window.location.href = "portfolio.html#point";
-            });
-        </script>
+        <div class="grid-item">
+            <img id="image3" src="screenshot_2.PNG" alt="image 3" width="200" height="130" />
+            <h2> MSP Client Website </h2>
+            <p> Website developed for managed service provider client using Wordpress and HTML. </p>
+            <a href="https://itworksmsp.com/" target="_blank">
+                <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
+            </a>
+        </div>
+        <div class="grid-item">
+            <div class="image-container">
+                <img id="image3" src="Capture1.PNG" alt="image 4" width="100" height="130" />
+                <img id="image3" src="Capture2.PNG" alt="image 4" width="100" height="130" />
+            </div>
+            <h2> Security Token App </h2>
+            <p> Android application developed using Java, designed to generate a passcode for the user and display the timestamps of the passcode changes. </p>
+            <a href="https://github.com/rumpy752/SecurityTokenApp" target="_blank">
+                <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
+            </a>
+        </div>
+        <div class="grid-item">
+            <img id="image3" src="student-records_image.PNG" alt="image 4" width="200" height="130" />
+            <h2> Student Record Management </h2>
+            <p> C program designed to create and manage student records in a binary file.  </p>
+            <a href="https://github.com/rumpy752/Student-Records/blob/main/program.c" target="_blank">
+                <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
+            </a>
 
-        <ul>
-            <li>
-                <div class="title-container">
-                    <h2 id="ptitle"> MSP Client Website </h2>
-                    <span class="title-text"> <span class="dot" style="background-color: #00ff21; "></span> wordpress <span class="dot" style="background-color: #e34c26; "></span> html  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                    <span class="arrow" onclick="toggleDropdown('dropdown1', this)">▼</span>
+           
+        </div>
+            <div class="grid-item">
+                <img id="image3" src="screenshot_4.PNG" alt="image 5" width="200" height="130" />
+                <h2> Order Form </h2>
+                <p> Order web form developed using HTML, Javascript and CSS. </p>
+                <div class="icons-container">
+                    <a href="https://github.com/rumpy752/Web-Form/blob/main/index.html" target="_blank">
+                        <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
+                    </a>
+                    <a href="https://rumpy752.github.io/Web-Form/" target="_blank">
+                        <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
+                    </a>
                 </div>
-                <div id="dropdown1" class="dropdown-content">
-                    <div class="row-contents">
-                        <div class="column-dropdown1">
-                            I created a visually captivating and user-friendly website for a client in the Managed Service Provider (MSP) industry using WordPress and HTML. The website showcases their comprehensive services, emphasizing intuitive navigation, eye-catching visuals, and clear calls-to-action. I prioritized performance and responsiveness, ensuring a seamless experience across devices.
-                            <div class="icons-container">
-                                <a href="https://itworksmsp.com/" target="_blank">
-                                    <img id="link-icon" src="icons8-external-link-48.png" height="40" width="40" />
-                                </a>
-                            </div>
-                        </div>
-                        <a href="https://itworksmsp.com/" target="_blank">
-                            <div class="column-dropdown2"><img id="img-dropdown" src="screenshot_2.png" height="250" width="400" /></div>
-                        </a> 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="title-container">
-                    <h2 id="ptitle">Secure Login Credentials Generator</h2>
-                    <span class="title-text"> <span class="dot" style="background-color: #f70cca;"></span> python </span>
-                    <span class="arrow" onclick="toggleDropdown('dropdown2', this)">▼</span>
-                </div>
+            </div>
+            <div class="grid-item">
+                <img id="image3" src="screenshot_3.PNG" alt="image 6" width="200" height="130" />
 
-                <div id="dropdown2" class="dropdown-content">
-                    <div class="row-contents">
-                        <div class="column-dropdown1">
-                            I've designed a Python program that generates personalized usernames and strong passwords, meeting specific criteria and ensuring security. The program considers factors like user preferences and incorporates alphanumeric characters, special symbols, and varying case sensitivity for strong passwords.
-                            <div class="icons-container">
-                                <a href="https://github.com/rumpy752/Secure-Login-Credentials-Generator/blob/main/credentials-generator.py" target="_blank">
-                                    <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column-dropdown2"><img id="img-dropdown" src="password-generator_image.PNG" height="250" width="400" /></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="title-container">
-                    <h2 id="ptitle">Android Security App</h2>
-                    <span class="title-text"> <span class="dot" style="background-color: #0094ff;"></span> XML <span class="dot" style="background-color: #ff6a00;"></span> java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span class="arrow" onclick="toggleDropdown('dropdown3', this)">▼</span>
-                </div>
+                <h2> Cult of the Cultivars </h2>
+                <p> . . .  Coming soon . . . </p>
+                <p> Developing a website for a client using Squarespace and additional HTML, CSS and javascript.  </p>
 
-                <div id="dropdown3" class="dropdown-content">
-                    <div class="row-contents">
-                        <div class="column-dropdown1">
-                            I developed a security token app using Android Studios, Java, and XML for a school project. This prototype generates unique passcodes every minute and records and displays the timestamps. It demonstrates my proficiency in Android app development and serves as a foundation for future enhancements.
-                            <div class="icons-container">
-                                <a href="https://github.com/rumpy752/SecurityTokenApp" target="_blank">
-                                    <img id="github-icon" src="github-logo.png" height="40" width="40" alt="GitHub Icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column-dropdown2">
-                            <div class="image-container">
-                                <img id="image3" src="Capture1.PNG" alt="image 4" width="200" height="250" />
-                                <img id="image3" src="Capture2.PNG" alt="image 4" width="200" height="250" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </li>
-        </ul>
-    </div>
-
-    <script>
-      
-        function toggleDropdown(id, arrow) {
-            var dropdown = document.getElementById(id);
-            if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                dropdown.style.display = "block";
-                arrow.innerHTML = "&#9650;";
-            } else {
-                dropdown.style.display = "none";
-                arrow.innerHTML = "&#9660;";
-            }
-        }
-    </script>
-
-
-
-    <div id="contact">
-        <h2>Get In Touch </h2>
-
-        <p> My inbox is always open, please get in touch with any job opportunities, questions, or feedback for me! I appreicate the input.  </p>
-
-        <button id="btn" onclick="window.location.href='contact.html'">Say Hello</button>
-    </div>
+            </div>
+        </div>
 
     <footer>
         <p> Designed & Built by Jaime Rump</p>
-        <p> &#169; 2023</p>
+        <p> © 2023</p>
     </footer>
+
 </body>
 </html>
