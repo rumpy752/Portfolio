@@ -130,7 +130,7 @@ nav {
 
 #resume_p {
     font-family: 'Roboto', sans-serif;
-    font-size: 8px;
+    font-size: 12px;
     word-spacing: 0.2px;
     color: white;
     font-weight: 500;
@@ -140,7 +140,7 @@ nav {
     text-align: center;
     width: 60%;
     margin: 60px auto;
-    line-height: 35px;
+    line-height: 15px;
 }
 
 #resume_a {
