@@ -104,7 +104,7 @@ nav {
     height: auto; /* adjust this value to your desired height */
     background-color: #221E22;
     width: 100%;
-    padding: 0px;
+    padding: 10px;
     margin: 0; /* don't change this !! */
 }
 
@@ -130,7 +130,7 @@ nav {
 
 #resume_p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     word-spacing: 0.2px;
     color: white;
     font-weight: 500;
