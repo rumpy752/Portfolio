@@ -104,7 +104,7 @@ nav {
     height: auto; /* adjust this value to your desired height */
     background-color: #221E22;
     width: 100%;
-    padding: 10px;
+    padding: 30px;
     margin: 0; /* don't change this !! */
 }
 
@@ -124,7 +124,7 @@ nav {
     font-variant: normal;
     text-align: center;
     width: 70%;
-    margin: 10px auto;
+    margin: 20px auto;
     line-height: 35px;
 }
 
