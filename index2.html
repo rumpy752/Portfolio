@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -26,15 +25,12 @@
             </ul>
         </div>
     </nav>
-
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script>
         // Get the button
         let mybutton = document.getElementById("myBtn");
-
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
-
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
@@ -48,20 +44,14 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-
     <div class="row_intro">
         <p id="resume_title"> Hey, I'm Jaime . </p>
         <p id="resume_p">
         Born and raised in Taranaki, New Zealand. Currently living in West Kelowna, BC. I have developed a passion to connect people through the power of technology; I have taken it upon myself to learn concepts such as data structures, programming languages, and software architecture, so I can develop software that achieves this. I enjoy front-end development where I can bring apps to life; I am also compentent in Structured and Object-Oriented paradigms, giving me a deeper understanding of how everything works together.  </p>
         <a id="resume_a" href="https://github.com/rumpy752?tab=repositories" target="blank">&#8594; View Github Repository</a>
-
         <a id="resume_a" onclick="downloadFile()">&#8594; Download Resume</a>
-
     </div>
-
     <script>
-
-
         const title = document.querySelector("#resume_title");
         const text = title.textContent;
         const length = text.length;
@@ -156,7 +146,6 @@
                     <span class="title-text"> <span class="dot" style="background-color: #0094ff;"></span> XML <span class="dot" style="background-color: #ff6a00;"></span> java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <span class="arrow" onclick="toggleDropdown('dropdown3', this)">▼</span>
                 </div>
-
                 <div id="dropdown3" class="dropdown-content">
                     <div class="row-contents">
                         <div class="column-dropdown1">
@@ -238,9 +227,6 @@
             }
         }
     </script>
-
-
-
     <div id="contact">
         <h2>Get In Touch </h2>
 
@@ -248,7 +234,6 @@
 
         <button id="btn" onclick="window.location.href='contact.html'">Say Hello</button>
     </div>
-
     <footer>
         <p> Designed & Built by Jaime Rump</p>
         <p> &#169; 2023</p>
