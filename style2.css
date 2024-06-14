@@ -67,8 +67,8 @@ letter-spacing: 0px;
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    grid-template-columns: repeat(3, 1fr); /* Four columns */
+    grid-template-rows: repeat(3, 1fr); /* Two rows */
     gap: 10px; /* Gap between grid items */
     /* padding: 20px;  Padding for the grid container */
     width: 80%;
