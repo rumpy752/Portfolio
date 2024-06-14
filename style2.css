@@ -42,6 +42,17 @@ nav {
     margin-right: 45px;
 }
 
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Optional: Adjust spacing between images */
+    gap: 10px; /* Optional: Add gap between images */
+}
+
+.side-by-side {
+    max-width: 100%;
+    height: auto;
+}
+
 h2 {
     font-family: 'Courier New', monospace !important;
     font-size: 40px !important;
