@@ -70,7 +70,7 @@ letter-spacing: 0px;
     grid-template-columns: repeat(4, 1fr); /* Four columns */
     grid-template-rows: repeat(2, 1fr); /* Two rows */
     gap: 10px; /* Gap between grid items */
-    padding: 20px; /* Padding for the grid container */
+    /* padding: 20px;  Padding for the grid container */
     width: 80%;
     margin: 20px auto;
 }
